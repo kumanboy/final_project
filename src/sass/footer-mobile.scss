@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+  .footer {
+    background: $black-600;
+    color: $white;
+    text-align: center;
+    padding: 60px 0;
+
+    .footer__menu {
+      padding: 0;
+
+      .footer__menu__item {
+        display: block;
+        padding: 10px;
+
+        .footer__menu__item__contact-details {
+          padding: 10px;
+
+          .footer__menu__item__contact-details__item {
+            padding: 10px 0;
+            display: block;
+
+            div {
+              text-align: center;
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+
+              span {
+                padding: 10px 0;
+                font-size: 18px;
+                line-height: 16px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: $white;
+              }
+            }
+
+            ul {
+              margin-left: 0;
+
+              li, a {
+                font-size: 16px;
+                line-height: 19px;
+                color: $gray-400;
+              }
+
+              li {
+                margin: 10px 0;
+              }
+
+            }
+
+          }
+        }
+
+      }
+
+      .footer__menu__item:nth-child(2) {
+        float: none;
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+        color: $gray-400;
+      }
+    }
+
+
+  }
+}

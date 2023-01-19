@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+
+  .section {
+    .section__header {
+      width: auto;
+    }
+  }
+
+  .about-us {
+    .section__content {
+      ul > li {
+        display: block;
+        text-align: left;
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 420px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $black-500;
+      }
+    }
+  }
+}

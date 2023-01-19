@@ -1,0 +1,114 @@
+.header {
+
+  * {
+    color: $white;
+  }
+
+  height: 830px;
+  background: url("../../dist/img/bg1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 50px;
+  text-align: center;
+
+  .header__menu__logo {
+    display: block;
+    position: relative;
+    top: 20px;
+    text-align: left;
+    width: 91px;
+    height: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    margin-left: 60px;
+  }
+
+  .header__content {
+    margin-top: 210px;
+
+    img {
+      transition: 0.3s linear;
+      animation: logo 2s infinite linear;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: both;
+    }
+    
+    @keyframes logo {
+      100% {
+        transform: scale(1.5) rotateY(180deg);
+      }
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-top: 15px;
+    }
+
+    p {
+      padding-top: 45px;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: $white-700;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .header__menu {
+
+    .hamburger-menu {
+      display: none;
+    }
+
+    margin-bottom: 100px;
+
+    .header__menu__item {
+      position: relative;
+      display: inline;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      width: 81px;
+      height: 1rem;
+      margin: 0 16px;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        position: relative;
+      }
+
+      a:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.125rem;
+        bottom: -6px;
+        left: 0;
+        background-color: $white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+    }
+  }
+}
